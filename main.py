@@ -2,7 +2,7 @@ from game import *
 from player import *
 
 if __name__ == '__main__':
-    board = [[0 for i in range(BOARD_SIZE)] for j in range(BOARD_SIZE)]
+    board = [[EMPTY for i in range(BOARD_SIZE)] for j in range(BOARD_SIZE)]
     game = Game(board)
     print('Initial Board')
     print(game)
