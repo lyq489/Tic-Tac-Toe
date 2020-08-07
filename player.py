@@ -83,6 +83,8 @@ class MinimaxPlayer(Player):
                 best = temp
                 move = (row, col)
             self.game.board[row][col] = EMPTY
+            alpha = max(alpha, best)
+            beta = min(beta, best)
         return move
 
     def __minimax(self, piece, alpha, beta):
